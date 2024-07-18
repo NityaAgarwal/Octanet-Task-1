@@ -1,0 +1,304 @@
+@import "../../vars.css";
+.container {
+    background-color: var(--color-highlight-alt2);
+    border-radius: 25px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 9.95vh;
+    margin-bottom: 8vh;
+    padding-bottom: 2rem;
+}
+
+.small {
+    color: var(--color-dark);
+    margin-top: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    
+    /* margin-bottom: 8vh; */
+}
+
+.heading {
+    font-size: 1.55rem;
+    color: var(--color-dark);
+}
+
+.miniHeading {
+    display: flex;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+.loginWith {
+    color: var(--color-dark);
+    margin-top: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+#loginWith {
+    text-align: center;
+}
+
+a {
+    
+    color: var(--color-mid);
+    text-decoration: none;
+}
+
+
+.forgot {
+    padding: 0;
+    display: flex;
+}
+
+
+
+.icons {
+    display: flex; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+
+button {
+    border-radius: 35px;
+}
+
+#labels {
+    font-size: 1.25rem;
+    color: var(--color-dark);
+}
+
+.forgotpw {
+    display: none;
+}
+
+/* ------------------------ */
+
+@media (min-aspect-ratio: 1/1) {
+    /* Styles for screens with an aspect ratio greater than or equal to 1:1 */
+    .container {
+        margin-top: 13vh;
+    }
+
+    .heading {
+        font-size: 1.85rem;
+    }
+
+    #labels {
+        font-size: 1.55rem;
+    }
+
+    .content {
+        
+        margin-bottom: 15vh;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        top: 44rem;
+    }
+  }
+
+    @media ( max-aspect-ratio: 3/4) {
+    /* Styles for screens with an aspect ratio less than or equal to 3:4 
+    means - 0.75 max 1000/1340 to 1000/1700*/
+
+    .container {
+        margin-top: 17vh;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        margin-top: 5%;
+    }
+
+    #labels {
+        font-size: 1.65rem;
+        margin-top: 3%;
+    }
+
+    .content {
+        
+        margin-bottom: 10vh;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 44%;
+    }
+    
+    .forgotpw img {
+
+        width: 27rem;
+        height: auto;
+        position: absolute;
+        top: 57rem;
+    }
+  .small, span {
+    font-size: 1.25rem;
+  }
+
+  }
+  @media (max-aspect-ratio: 50/77) {
+    
+  .container {
+        margin-top: 21vh;
+    }
+
+    .heading {
+        font-size: 2.75rem;
+        margin-top: 10%;
+    }
+
+    #labels {
+        font-size: 1.75rem;
+        margin-top: 6%;
+    }
+
+    .content {
+        
+        margin-bottom: 24vh;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        
+    }
+    
+    .forgotpw img {
+
+        width: 25rem;
+        height: auto;
+        position: absolute;
+        top: 70rem;
+    }
+  .small, span {
+    font-size: 1.45rem;
+  }
+
+  button {
+    margin-top: 3%;
+  }
+  
+  }
+  
+  @media (max-aspect-ratio: 9/16) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3 
+    means 0.56 or LESS 850 x 1555*/
+    .container {
+        margin-top: 18vh;
+    }
+
+    .heading {
+        font-size: 2.75rem;
+        margin-top: 10%;
+    }
+
+    #labels {
+        font-size: 1.75rem;
+        margin-top: 6%;
+    }
+
+    .content {
+        
+        margin-bottom: 24vh;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        
+    }
+    
+    .forgotpw img {
+
+        width: 25rem;
+        height: auto;
+        position: absolute;
+        top: 70rem;
+    }
+  .small, span {
+    font-size: 1.45rem;
+  }
+
+  button {
+    margin-top: 3%;
+  }
+  
+
+  }
+  
+  @media (min-aspect-ratio: 4/3) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3
+    means 1.33 minimum */
+    .content {
+        
+        margin-bottom: 13vh;
+    }
+
+    .small, span {
+        font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-aspect-ratio: 17/10) {
+    /* means 1.77 ration minimum */
+    .container {
+        margin-top: 14vh;
+    }
+
+    .heading {
+        font-size: 1.85rem;
+        font-size: 3.182vh;
+    }
+
+    #labels {
+        font-size: 1.55rem;
+    }
+
+    .content {
+        
+        margin-bottom: 9vh;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        top: 44rem;
+    }
+
+    .small, .small span {
+        font-size: 1.2rem;
+    }
+  }
+
+
+

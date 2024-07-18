@@ -1,0 +1,14 @@
+/* In index.css you put the css that gets applied
+to every single element of the entire app */
+* {
+  box-sizing: border-box;
+  /* padding-top: 0.25rem;  */
+  margin: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  /* width: 100vw; */
+}
+
+body {
+  width: 100%;
+}

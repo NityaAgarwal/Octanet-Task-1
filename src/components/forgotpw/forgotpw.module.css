@@ -1,0 +1,251 @@
+.container {
+    background-color: var(--color-highlight-alt2);
+    /* position: relative;
+    z-index: 1; */
+    border-radius: 25px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 18.5vh;
+    margin-bottom: 13.5vh;
+    /* height: 50vh; */
+    /* background-color: var(--color-highlight-alt2); */
+    /* opacity: 0.5; */
+    padding-bottom: 2rem;
+}
+/* 720 1600 */
+.container .content {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    /* align-items: center; */
+    margin-bottom: 25.5vh;
+}
+
+.content .heading {
+    font-size: 1.55rem;
+}
+.userDetails #labels {
+    font-size: 1.25rem;
+}
+.miniHeading {
+    display: flex;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+.loginWith {
+    color: var(--color-dark);
+    margin-top: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+#loginWith {
+    text-align: center;
+}
+
+a {
+    
+    color: var(--color-mid);
+    text-decoration: none;
+}
+
+
+.forgot {
+    padding: 0;
+    display: flex;
+}
+
+.icons {
+    display: flex; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+.forgotpw {
+    display: none;
+}
+
+button {
+    border-radius: 35px;
+}
+
+/* @media screen and (min-width: 830px) {
+    .container {
+        width: 40vw;
+        margin-left: 30vw;
+    }
+} */
+
+
+
+@media (min-aspect-ratio: 1/1) {
+    /* Styles for screens with an aspect ratio greater than or equal to 1:1 */
+
+    .container .content {
+        margin-top: 4%;
+        margin-bottom: 32vh;
+    }
+
+    .content .heading {
+        margin-top: 10%;
+        font-size: 1.75rem;
+    }
+
+    .userDetails #labels {
+        font-size: 1.55rem;
+        margin-top: 2%;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 3/4) {
+    /* Styles for screens with an aspect ratio less than or equal to 3:4 
+    means - 0.75 max*/
+    .container .content {
+        margin-top: 4%;
+        margin-bottom: 41.6vh;
+    }
+
+    .content .heading {
+        margin-top: 10%;
+        font-size: 1.85rem;
+    }
+
+    .userDetails #labels {
+        font-size: 1.75rem;
+        margin-top: 2%;
+    }
+
+    .loginWith {
+        font-size: 1.22rem;
+        margin-top: 2%;
+    }
+ 
+  
+  }
+  
+  @media (max-aspect-ratio: 9/16) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3 
+    means 0.56 or LESS  980 1777*/
+    .container .content {
+        margin-top: 4%;
+        margin-bottom: 42vh;
+    }
+
+    .content .heading{
+        margin-top: 12%;
+        font-size: 2.5rem;
+    }
+
+    .userDetails #labels {
+        font-size: 2rem;
+        margin-top: 6%;
+    }
+
+    .loginWith {
+        font-size: 1.25rem;
+        margin-top: 2%;
+    }
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        top: 65rem;
+    }
+  }
+  
+  @media (min-aspect-ratio: 4/3) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3
+    means 1.33 minimum */
+    .container .content {
+        margin-top: 4%;
+        margin-bottom: 30vh;
+    }
+
+    .content .heading {
+        margin-top: 3%;
+        font-size: 1.75rem;
+    }
+
+    .userDetails #labels {
+        font-size: 1.55rem;
+        margin-top: 2%;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        /* top: 65rem; */
+    }
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    /* means 1.77 ration minimum */
+    .container .content {
+        margin-top: 4%;
+        margin-bottom: 25vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content .heading {
+        margin-top: 3%;
+        font-size: 3.5rem;
+    }
+
+    .userDetails #labels {
+        font-size: 1.95rem;
+        margin-top: 2%;
+    }
+
+    .loginWith {
+        font-size: 1.25rem;
+        margin-top: 2%;
+    }
+
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+    }
+    
+    .forgotpw img {
+
+        width: 24rem;
+        height: auto;
+        position: absolute;
+        /* top: 65rem; */
+    }
+  }
+
+
+

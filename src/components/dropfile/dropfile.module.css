@@ -1,0 +1,210 @@
+/* dropfile.module.css */
+
+@import "../../vars.css";
+
+:root {
+  --container-width: 60vw; 
+}
+
+.container {
+  margin-bottom: 30%;
+}
+
+.container .sendBox, .container .content {
+  margin-left: 20vw;
+  margin-top: 20vh; 
+  border-radius: 25px;
+  display: flex;
+  height: 60vh;
+}
+.sendBox {
+  position: absolute;
+  width: var(--container-width);
+  background-color: var(--color-light);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  padding: 2rem; /* Add padding if needed */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+.linkBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.linkBox .link {
+  border: 2px dashed var(--color-highlight-alt);
+  width: 100%;
+  border-radius: 25px;
+  height: auto;
+  padding: 2%;
+  background-color: var(--color-highlight-alt2);
+  display: flex;
+}
+.linkBox .link input {
+  background-color: var(--color-highlight-alt2);
+  border: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.copyIcon {
+  cursor: pointer;
+}
+#fileURL {
+  width: 91%;
+}
+.content {
+  width: var(--container-width);
+  background-color: var(--color-highlight-alt2);
+  opacity: 1;
+  flex-direction: column-reverse;
+}
+
+.expireMsg {
+  font-size: 1.25rem;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  height: 35vh;
+  width: 45vw;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px dashed;
+  border-radius: 25px;
+}
+.myCustom {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.icon {
+  width: 100px;
+  height: auto;
+  transition: transform 250ms ease-in-out; 
+}
+.dragged .icon {
+  transform: scale(0.8);
+  transform-origin: bottom; 
+  filter: grayscale(1);
+}
+.browseFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+#browseInput {
+  position: absolute;
+  margin-bottom: 5%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+label {
+  font-size: 1.7rem;
+}
+
+label span {
+  font-size: 1.7rem;
+}
+
+.browseBtn {
+  cursor: pointer;
+  color: var(--color-highlight);
+}
+
+#qrImg {
+  width: 10rem;
+  height: 10rem;
+}
+
+
+@media (min-aspect-ratio: 1/1) {
+  /* Styles for screens with an aspect ratio greater than or equal to 1:1 */
+  .overlay {
+    top: 40%;
+  }
+
+  .browseFile {
+    margin-bottom: 12%;
+  }
+}
+
+@media (max-aspect-ratio: 3/4) {
+  /* Styles for screens with an aspect ratio less than or equal to 3:4 
+  means - 0.75 max*/
+  .overlay {
+    top: 45%;
+  }
+
+  .browseFile {
+    margin-bottom: 15%;
+  }
+
+
+}
+
+@media (max-aspect-ratio: 9/16) {
+  /* Styles for screens with an aspect ratio greater than or equal to 4:3 
+  means 0.56 or LESS */
+
+  .overlay {
+    top: 47%;
+  }
+
+  .browseFile {
+    margin-bottom: 20%;
+  }
+
+  .container {
+    margin-bottom: 37%;
+  }
+}
+
+@media (min-aspect-ratio: 4/3) {
+  /* Styles for screens with an aspect ratio greater than or equal to 4:3
+  means 1.33 minimum */
+  .overlay {
+    top: 40%;
+  }
+
+  .browseFile {
+    margin-bottom: 10%;
+  }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  /* means 1.77 ration minimum */
+  .overlay {
+    top: 32.5%;
+  }
+
+  .browseFile {
+    margin-bottom: 5%;
+  }
+}

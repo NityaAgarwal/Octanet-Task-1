@@ -1,0 +1,334 @@
+.container {
+    background-color: var(--color-highlight-alt2);
+    /* position: relative;
+    z-index: 1; */
+    border-radius: 25px;
+    width: 61vw;
+    margin-left: 20vw;
+    margin-top: 18vh;
+    margin-bottom: 11.15vh;
+    /* height: 50vh; */
+    /* background-color: var(--color-highlight-alt2); */
+    /* opacity: 0.5; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content .heading {
+    font-size: 1.55rem;
+}
+
+/* .miniHeading {
+    display: flex;
+} */
+
+hr {
+    margin-bottom: 0;
+}
+
+.otherOptions .small {
+    color: var(--color-dark);
+    margin-top: 0;
+    font-size: 0.85rem;
+    text-align: end;
+}
+.forgotQues {
+    display: flex;
+    justify-content: end;
+}
+
+
+.otherOptions .small .loginWith {
+    color: var(--color-dark);
+    margin-top: 0;
+    font-size: 0.85rem;
+}
+
+#loginWithID {
+    text-align: center;
+}
+
+a {
+    
+    color: var(--color-mid);
+    text-decoration: none;
+}
+
+
+.forgot {
+    padding: 0;
+    display: flex;
+}
+
+
+
+.icons {
+    display: flex; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+
+img {
+    margin: 0 0.5rem 0 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.userDetails form #labels {
+    font-size: 1.25rem;
+}
+
+.forgotpw {
+    display: none;
+}
+
+
+/* ---------------------- */
+@media (min-aspect-ratio: 1/1) {
+    /* Styles for screens with an aspect ratio greater than or equal to 1:1 */
+    .content {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .content .heading {
+        font-size: 2rem;
+    }
+
+    form #labels {
+        font-size: 1.35rem;
+    }
+
+    .userDetails form {
+        margin-top: 2%;
+    }
+
+    span, .small {
+        font-size: 1rem;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+    }
+    
+    .forgotpw img {
+        margin: 0 0.55rem 1rem 0.55rem;
+        height: 2.25rem;
+        width: 2rem;
+    }
+
+    .container {
+        margin-bottom: 22vh;
+    }
+  }
+  
+  @media (max-aspect-ratio: 3/4) {
+    /* Styles for screens with an aspect ratio less than or equal to 3:4 
+    means - 0.75 max 1000/1340*/
+
+    .content {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    #labels {
+        font-size: 1.5rem;
+    }
+
+    form {
+        margin-top: 2%;
+    }
+
+    span, .small {
+        font-size: 1rem;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    img {
+        margin: 0 0.55rem 1rem 0.55rem;
+        height: 2.25rem;
+        width: 2rem;
+    }
+
+    .container {
+        margin-bottom: 30vh;
+    }
+
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        top: 53rem;
+    }
+  }
+ 
+  @media (max-aspect-ratio: 9/16) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3 
+    means 0.56 or LESS 850 x 1555*/
+    .content {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 45%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    #labels {
+        font-size: 1.5rem;
+    }
+
+    form {
+        margin-top: 2%;
+    }
+
+    span, .small {
+        font-size: 1rem;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    img {
+        margin: 0 0.55rem 1rem 0.55rem;
+        height: 2.25rem;
+        width: 2rem;
+    }
+
+    .container {
+        margin-bottom: 30vh;
+    }
+
+    .forgotpw {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    
+    .forgotpw img {
+
+        width: 20rem;
+        height: auto;
+        position: absolute;
+        top: 53rem;
+    }
+  
+
+  }
+  
+  @media (min-aspect-ratio: 4/3) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3
+    means 1.33 minimum */
+ 
+    .content {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    #labels {
+        font-size: 1.35rem;
+    }
+
+    form {
+        margin-top: 2%;
+    }
+
+    span, .small {
+        font-size: 1rem;
+    }
+
+    .loginWith {
+        font-size: 1rem;
+    }
+    
+    img {
+        margin: 0 0.55rem 1rem 0.55rem;
+        height: 2.25rem;
+        width: 2rem;
+    }
+
+    .container {
+        margin-bottom: 22vh;
+    }
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    /* means 1.77 ration minimum */
+  
+    .content {
+        margin-top: 6%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    #labels {
+        font-size: 1.5rem;
+    }
+
+    form {
+        margin-top: 2%;
+    }
+
+    span, .small {
+        font-size: 1.2rem;
+    }
+
+    .loginWith {
+        font-size: 1.25rem;
+        margin-top: 0.75rem;
+    }
+    
+    img {
+        margin: 0 0.65rem 1rem 0.65rem;
+        height: 2.25rem;
+        width: 2.2rem;
+    }
+
+    .container {
+        margin-bottom: 22vh;
+    }
+  }
+
+
+

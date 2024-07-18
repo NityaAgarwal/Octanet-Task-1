@@ -1,0 +1,141 @@
+@media (max-aspect-ratio: 3/4) {
+    /* Styles for screens with an aspect ratio less than or equal to 3:4 */
+    .content {
+        margin-top: 35%;
+        /* margin-bottom: 10%; */
+        /* margin-right: 10%; */
+        /* margin-left: 10%; */
+        /* margin: 10%; */
+    }
+
+    .heading {
+        font-size: 8rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .subheading {
+        font-size: 2.5rem;
+        padding-bottom: 0;
+    }
+
+    #callToAction{
+        font-size: 1.5rem;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+
+    .getStartedBtn, .btn1{
+        border-radius: 25px;
+        padding: 7px;
+        /* padding-left: 10px;
+        padding-right: 5px; */
+        margin: 7px;
+        /* margin-top: 1; */
+    }
+  }
+
+  @media (max-aspect-ratio: 9/16) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3 */
+    .content {
+        margin-top: 25%;
+        /* margin-bottom: 10%; */
+        /* margin-right: 10%; */
+        /* margin-left: 10%; */
+        /* margin: 5%; */
+    }
+
+    .heading {
+        font-size: 7rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .subheading {
+        font-size: 2.5rem;
+        padding-bottom: 0;
+    }
+
+    #callToAction{
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+
+    .getStartedBtn, .btn1{
+        border-radius: 25px;
+        padding: 7px;
+        /* padding-left: 10px;
+        padding-right: 5px; */
+        margin: 7px;
+    }
+  }
+
+  @media (min-aspect-ratio: 4/3) {
+    /* Styles for screens with an aspect ratio greater than or equal to 4:3 */
+    .content {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    span {
+        font-size: 7rem;
+        border-radius: 3rem;
+    }
+
+    .subheading {
+        font-size: 2.5rem;
+        padding-bottom: 0;
+    }
+
+    .startNow{
+        border-radius: 10rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        width: 20%;
+        margin-left: 40%;
+    }
+
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    /* Styles for screens with an aspect ratio greater than or equal to 16:9 */
+    .content {
+        /* margin-top: 10%;
+        margin-bottom: 10%;
+        margin-right: 10%;
+        margin-left: 10%; */
+        margin: 10%;
+    }
+
+    .heading {
+        font-size: 10rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .subheading {
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+
+    #callToAction{
+        font-size: 1.5rem;
+        flex-direction: row;
+    }
+
+    .getStartedBtn, .btn1{
+        border-radius: 25px;
+        padding: 10px;
+        /* padding-left: 10px;
+        padding-right: 5px; */
+        box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    /* note - box glow is not working */
+  }
+  
